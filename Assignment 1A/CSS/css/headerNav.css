@@ -1,0 +1,137 @@
+
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*----------------header-------------------------*/
+header {
+    background-color: #030629;
+    color: #cdc4c4;
+    padding: 10px;
+    text-align: center; 
+}
+
+header span {
+    display: inline-block;
+}
+
+header span:nth-child(1) {
+    color: #FF2AA3;
+}
+
+header span:nth-child(2) {
+    color: #B50CB8;
+}
+
+header span:nth-child(3) {
+    color: #D000D4;
+    letter-spacing: 6px;
+    font-size: 16px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #FF2AA3;
+    border-spacing: 1px;
+    border-bottom: #D000D4 solid 4px;
+}
+
+/* Add this CSS code to style the "Cart" button */
+.cart-button {
+    background-color: #B50CB8;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px; /* Adjust the spacing from the other navigation items */
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+.cart-button:hover {
+    color: #FF2AA3;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+/* Style for the cart number badge */
+.cart-button .cart-number {
+    color: #030629;
+    padding: 2px 4px;
+    font-size: 12px;
+}
+
+@media (max-width: 680px) {
+    .cart-button {
+        padding: 6px 10px; /* Reduce padding for a more compact size */
+        font-size: 10px; /* Reduce font size for better fit */
+        margin-left: 0; /* Remove left margin to save space on small screens */
+        margin-top: 18px; /* Add top margin for spacing */ 
+        text-align: center; /* Center-align the button text */
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: auto;
+    }
+}
+
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #030629;
+    padding: 10px;
+    text-align: center;
+}
+.fixed-navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.fixed-navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.fixed-navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fixed-navbar a:hover {
+    color: #FF2AA3;
+    border-spacing: 1px;
+    border-bottom: #D000D4 solid 4px;
+}

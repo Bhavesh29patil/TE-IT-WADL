@@ -1,0 +1,106 @@
+/* Styles for the Payment Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+}
+
+header {
+    background-color: #030629;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#payment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #030629;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.payment-methods img {
+    max-width: 60px; /* Adjust the maximum width of the payment method images */
+    max-height: 40px; /* Adjust the maximum height of the payment method images */
+}
+
+.payment-method {
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+}
+
+.payoption{
+    margin: 0 16px
+}
+
+@media screen and (max-width: 768px) {
+    .payment-methods {
+        flex-wrap: wrap; /* Allow payment methods to wrap on smaller screens */
+    }
+
+    .payment-method {
+        margin-right: 10px;
+        margin-bottom: 10px; /* Add margin at the bottom for spacing */
+    }
+    h2 {
+        font-size: 18px;
+    }
+}

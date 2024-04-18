@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/headerNav.css">
+    <link rel="stylesheet" href="../css/foodcart.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Momos&More..| Food Cart</title>
+    <link rel="icon" type="image/ico" href="../assest/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>Momos</span>
+            <span>&</span>
+            <span>More..</span>
+        </h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li> <a href="../pages/cart.html" class="cart-button">Cart<span class="cart-number">0</span>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="cart-section">
+        <h1>Your Food Item Carts</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Item Price</th>
+                    <th>Quantity</th>
+                    <th>Total Cost</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody class="cart-items">
+                <!-- Cart items will go here using JavaScript -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Grand Total</td>
+                    <td class="grand-total">Rs. 0</td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="5" class="text-right">
+                       <button class="buy-btn" onclick="redirectToPayment()" >Buy</button>
+                    </td>
+                 </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Momos&More Restaurant</p>
+        <p>Made by Bhavesh Patil| Assignment 1 |</p>
+    </footer>
+    <!-- <script src="../script/NavbarScrollingUpdate.js"></script>
+    <script src="../script/cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+</body>
+
+</html>

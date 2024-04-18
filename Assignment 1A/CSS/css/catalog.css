@@ -1,0 +1,118 @@
+/* catalog.css */
+section h2{
+    margin-top: 24px;
+    margin-bottom: 0;
+    padding: 16px;
+    text-align: center;
+ }
+ #order{
+    padding: 0;
+ }
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-item {
+    border: 1px solid #dfd7d7;
+    background-color: #f7f7f7;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    flex-basis: 35%;
+}
+
+.food-item img {
+    max-width: 100%;
+}
+
+.food-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #B50CB8;
+}
+
+.add-cart {
+    background-color: #B50CB8;
+    color: #fff;
+    border: 1px solid #B50CB8;
+    padding: 8px 12px;
+    border-radius: 8px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+.add-cart:hover{
+    background-color: #fff;
+    color: #B50CB8;
+
+}
+
+.item-added-pop-up {
+    display: inline-block;
+    opacity: 0;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 8px 8px;
+    background-color: #B50CB8;
+    color: white;
+    position:relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.buy-button {
+    background-color: #B50CB8;
+    color: #fff;
+    border: 1px solid #B50CB8;
+    padding: 8px 12px;
+    border-radius: 8px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buy-button:hover {
+    background-color: #fff;
+    color: #B50CB8;
+}
+
+@media (max-width: 750px) {
+    .food-item {
+        flex-basis: 60%;
+    }
+    .buy-button, .add-cart {
+       font-size: 14px;
+    }
+    
+   
+}
+
+@media (max-width: 480px) {
+    .food-item {
+        flex-basis: 100%;
+    }
+    .buy-button, .add-cart {
+       font-size: 14px;
+    }
+    
+   
+}

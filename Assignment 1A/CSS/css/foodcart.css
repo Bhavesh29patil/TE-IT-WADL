@@ -1,0 +1,123 @@
+.cart-section {
+    margin-top: 2%;
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+    min-height: 70vh;
+}
+.cart-section h1{
+    text-align: center;
+    margin: 32px;
+    padding: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Add this property for flexible cell width */
+}
+
+thead th {
+    
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+
+tbody td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    word-wrap: break-word; /* Allow long content to wrap to the next line */
+}
+
+tbody td img {
+    vertical-align: center;
+    max-width: 90px;
+    max-height: 80px;
+    border-radius: 15%;
+
+}
+
+tfoot td {
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.grand-total{
+    margin: 24px;
+    padding: 24px;
+}
+
+.cart-items tr:last-child td {
+    border-bottom: none;
+}
+
+.cart-items td:last-child {
+    text-align: center;
+}
+
+.remove-icon {
+    color: #B50CB8;
+    cursor: pointer;
+}
+.remove-icon:hover{
+    color: #030629;
+}
+.buy-btn {
+    background-color: #B50CB8;
+    color: #fff;
+    border: 1px solid #B50CB8;
+    padding: 8px 16px;
+    border-radius: 8px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 32px;
+    margin-right: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buy-btn:hover {
+    background-color: #fff;
+    color: #B50CB8;
+}
+
+@media (max-width:440px){
+    .cart-section h1{
+        text-align: center;
+        margin: 16px;
+        padding: 16px;
+        font-size: 16px;
+    }
+    thead th {
+        padding: 5px;
+        font-size: 11px;
+    }
+    
+    tbody td {
+        font-size: 11px;
+        padding: 6px;
+    }
+    
+    tbody td img {
+        max-width: 60px;
+        
+    }
+    
+    tfoot td {
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+        padding: 8px;
+    }
+    .buy-btn {
+        padding: 8px 16px;
+        font-weight: 600;
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    
+}

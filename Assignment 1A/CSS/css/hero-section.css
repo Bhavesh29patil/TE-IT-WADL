@@ -1,0 +1,106 @@
+
+/*----------------main content------------------------*/
+/*----------------hero-------------------------*/
+
+section {
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+
+}
+
+logo {
+    max-width: 500px;
+    margin-bottom: 0;
+}
+
+.slogan {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #423d3d;
+}
+
+.welcome {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 64px;
+    color: #5b5656;
+    font-weight: 600;
+}
+
+.color-pink {
+    color: #FF2AA3;
+}
+
+.color-purple {
+    color: #B50CB8;
+}
+
+.color-magenta {
+    color: #D000D4;
+}
+
+.order-button {
+    background-color: #FF2AA3;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border-radius: 16px 16px;
+}
+
+.order-button:hover {
+    background-color: #B50CB8;
+}
+
+
+@media (max-width: 680px) {
+    section {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 60px 0;
+    }
+
+    .home-content {
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 28px;
+    }
+
+    .logo {
+        max-width: 280px;
+    }
+
+    .slogan {
+        font-size: 14px;
+    }
+
+    .welcome {
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media (max-width: 400px) {
+    section {
+        margin-top: 32px;
+        margin-bottom: 120px;
+    }
+
+}
